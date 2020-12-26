@@ -30,6 +30,12 @@ class Database {
 		return $result;
 	}
 
+	/** Perform safe database query, with prepared statement */
+	public function safeQuery($sqlQuery, $parameterArray) {
+		$result = $this->connection->exec($sqlQuery, $parameterArray);
+		return $result;
+	}
+
 }
 
 ?>
