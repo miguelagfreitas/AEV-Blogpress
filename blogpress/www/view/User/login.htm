@@ -1,0 +1,28 @@
+
+<div class="well" style="width: 60%; margin: auto; padding: auto">
+<h2>Login</h2>
+<p>Please type your BlogPress username and password to log in</p>
+
+<?
+	$img = new Image();
+	$img->captcha("fonts/Oswald-Medium.ttf",20,15,"SESSION.captcha_code");
+	$form = new Form(); 
+	echo $form->start();
+	echo $form->add('username');
+	echo $form->add('password',array('type' => 'password','value' => ''));
+	echo $form->add('captcha');
+?>
+
+<img src="data:image/png;base64,<?= base64_encode($img->dump());?>"/>
+
+<?
+	echo '<div></div>';
+	echo $form->add('Login',array('type' => 'submit'));
+	echo $form->end();
+?>
+
+
+<hr/>
+<p>Don't have an account yet? Why not <a href="<?=$site['base']?>/user/add">Register</a>
+
+</div>

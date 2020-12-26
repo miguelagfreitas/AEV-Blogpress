@@ -1,0 +1,2 @@
+user|a:10:{s:2:"id";s:1:"2";s:8:"username";s:4:"test";s:11:"displayname";s:40:"Test <img src="" onerror=alert("bla") />";s:5:"email";s:13:"test@test.com";s:8:"password";s:4:"test";s:4:"salt";N;s:5:"level";s:1:"2";s:7:"created";s:19:"2020-11-19 01:31:46";s:3:"bio";s:31:"<p><strong>hello</strong></p>
+";s:6:"avatar";s:18:"/uploads/shell.php";}
