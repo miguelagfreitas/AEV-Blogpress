@@ -1627,6 +1627,7 @@ Stack trace:
 [26-Dec-2020 15:37:43 UTC] HTTP 404 (GET /admin/%3C/a)
 [26-Dec-2020 15:37:43 UTC] HTTP 404 (GET /admin/%3C/a)
 [26-Dec-2020 15:37:50 UTC] HTTP 404 (GET /admin/favicon.ico)
+<<<<<<< HEAD
 [26-Dec-2020 17:19:38 UTC] HTTP 404 (GET /%3C/a)
 [26-Dec-2020 17:19:38 UTC] HTTP 404 (GET /%3C/a)
 [26-Dec-2020 17:19:52 UTC] HTTP 404 (GET /%3C/a)
@@ -1666,3 +1667,140 @@ Stack trace:
 [27-Dec-2020 03:28:22 UTC] inserted pass2d42db4c6526a19fee07
 [27-Dec-2020 03:28:22 UTC] HTTP 404 (GET /%3C/a)
 [27-Dec-2020 03:28:23 UTC] HTTP 404 (GET /%3C/a)
+=======
+[26-Dec-2020 17:05:11 UTC] HTTP 404 (GET /%3C/a)
+[26-Dec-2020 17:05:11 UTC] HTTP 404 (GET /%3C/a)
+[26-Dec-2020 17:05:23 UTC] HTTP 404 (GET /%3C/a)
+[26-Dec-2020 17:05:23 UTC] HTTP 404 (GET /%3C/a)
+[26-Dec-2020 17:05:27 UTC] HTTP 404 (GET /%3C/a)
+[26-Dec-2020 17:05:27 UTC] HTTP 404 (GET /%3C/a)
+[26-Dec-2020 17:05:39 UTC] PDOStatement: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '== '1' -- ' AND `password`=''' at line 1
+[26-Dec-2020 17:05:39 UTC] PHP Warning:  Unknown: Session data file is not created by your uid in Unknown on line 0
+[26-Dec-2020 17:05:39 UTC] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/var/www/html/tmp) in Unknown on line 0
+[26-Dec-2020 17:05:53 UTC] PDOStatement: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '== '1' -- ' AND `password`=''' at line 1
+[26-Dec-2020 17:05:53 UTC] PHP Warning:  Unknown: Session data file is not created by your uid in Unknown on line 0
+[26-Dec-2020 17:05:53 UTC] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/var/www/html/tmp) in Unknown on line 0
+[26-Dec-2020 17:05:57 UTC] PDOStatement: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''test'' AND `password`=''' at line 1
+[26-Dec-2020 17:05:57 UTC] PHP Warning:  Unknown: Session data file is not created by your uid in Unknown on line 0
+[26-Dec-2020 17:05:57 UTC] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/var/www/html/tmp) in Unknown on line 0
+[26-Dec-2020 17:13:47 UTC] PDOStatement: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''t''' at line 1
+[26-Dec-2020 17:13:47 UTC] PHP Warning:  Unknown: Session data file is not created by your uid in Unknown on line 0
+[26-Dec-2020 17:13:47 UTC] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/var/www/html/tmp) in Unknown on line 0
+[26-Dec-2020 17:14:44 UTC] PDOStatement: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''1''' at line 1
+[26-Dec-2020 17:14:44 UTC] PHP Warning:  Unknown: Session data file is not created by your uid in Unknown on line 0
+[26-Dec-2020 17:14:44 UTC] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/var/www/html/tmp) in Unknown on line 0
+[26-Dec-2020 17:17:02 UTC] HTTP 404 (GET /%3C/a)
+[26-Dec-2020 17:17:02 UTC] HTTP 404 (GET /%3C/a)
+[26-Dec-2020 17:18:24 UTC] HTTP 404 (GET /%3C/a)
+[26-Dec-2020 17:18:24 UTC] HTTP 404 (GET /%3C/a)
+[26-Dec-2020 17:18:24 UTC] HTTP 404 (GET /favicon.ico)
+[26-Dec-2020 17:20:04 UTC] HTTP 404 (GET /favicon.ico)
+[26-Dec-2020 17:26:12 UTC] HTTP 404 (GET /favicon.ico)
+[26-Dec-2020 17:31:28 UTC] HTTP 404 (GET /%3C/a)
+[26-Dec-2020 17:31:28 UTC] HTTP 404 (GET /%3C/a)
+[26-Dec-2020 17:31:31 UTC] HTTP 404 (GET /%3C/a)
+[26-Dec-2020 17:31:32 UTC] HTTP 404 (GET /%3C/a)
+[26-Dec-2020 17:37:05 UTC] HTTP 404 (GET /favicon.ico)
+[26-Dec-2020 17:38:11 UTC] HTTP 404 (GET /favicon.ico)
+[26-Dec-2020 17:38:19 UTC] HTTP 404 (GET /%3C/a)
+[26-Dec-2020 17:38:19 UTC] HTTP 404 (GET /%3C/a)
+[26-Dec-2020 17:38:19 UTC] HTTP 404 (GET /favicon.ico)
+[26-Dec-2020 17:39:47 UTC] HTTP 404 (GET /favicon.ico)
+[26-Dec-2020 17:39:52 UTC] HTTP 404 (GET /%3C/a)
+[26-Dec-2020 17:39:52 UTC] HTTP 404 (GET /%3C/a)
+[26-Dec-2020 17:40:24 UTC] HTTP 404 (GET /%3C/a)
+[26-Dec-2020 17:40:24 UTC] HTTP 404 (GET /%3C/a)
+[26-Dec-2020 17:40:38 UTC] PDOStatement: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''test''' at line 1
+[26-Dec-2020 17:40:38 UTC] PHP Warning:  Unknown: Session data file is not created by your uid in Unknown on line 0
+[26-Dec-2020 17:40:38 UTC] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/var/www/html/tmp) in Unknown on line 0
+[26-Dec-2020 17:41:27 UTC] HTTP 404 (GET /favicon.ico)
+[26-Dec-2020 17:42:03 UTC] HTTP 404 (GET /%3C/a)
+[26-Dec-2020 17:42:09 UTC] HTTP 403 (POST /user/login)
+[26-Dec-2020 17:42:20 UTC] HTTP 404 (GET /%3C/a)
+[26-Dec-2020 17:42:27 UTC] HTTP 404 (GET /%3C/a)
+[26-Dec-2020 17:44:41 UTC] HTTP 404 (GET /favicon.ico)
+[26-Dec-2020 17:45:08 UTC] HTTP 404 (GET /%3C/a)
+[26-Dec-2020 17:45:25 UTC] HTTP 404 (GET /admin/%3C/a)
+[26-Dec-2020 17:45:27 UTC] HTTP 404 (GET /admin/%3C/a)
+[26-Dec-2020 17:45:35 UTC] Missing argument 2 for Base::route(), called in /var/www/html/controllers/blog.php on line 27 and defined
+[26-Dec-2020 17:45:35 UTC] PHP Warning:  Unknown: Session data file is not created by your uid in Unknown on line 0
+[26-Dec-2020 17:45:35 UTC] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/var/www/html/tmp) in Unknown on line 0
+[26-Dec-2020 17:47:04 UTC] PHP Fatal error:  Call to undefined method Database::exec() in /var/www/html/helpers/authhelper.php on line 48
+[26-Dec-2020 17:47:04 UTC] Fatal error: Call to undefined method Database::exec()
+[26-Dec-2020 17:47:04 UTC] Unknown: Session data file is not created by your uid
+[26-Dec-2020 17:48:32 UTC] PHP Fatal error:  Call to undefined method Database::exec() in /var/www/html/helpers/authhelper.php on line 48
+[26-Dec-2020 17:48:32 UTC] Fatal error: Call to undefined method Database::exec()
+[26-Dec-2020 17:48:32 UTC] Unknown: Session data file is not created by your uid
+[26-Dec-2020 17:49:56 UTC] PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: no parameters were bound
+[26-Dec-2020 17:49:56 UTC] PHP Warning:  Unknown: Session data file is not created by your uid in Unknown on line 0
+[26-Dec-2020 17:49:56 UTC] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/var/www/html/tmp) in Unknown on line 0
+[26-Dec-2020 17:50:27 UTC] PHP Parse error:  syntax error, unexpected ')' in /var/www/html/helpers/authhelper.php on line 48
+[26-Dec-2020 17:50:27 UTC] Fatal error: syntax error, unexpected ')'
+[26-Dec-2020 17:50:27 UTC] PHP Fatal error:  Class 'AuthHelper' not found in /var/www/html/controllers/controller.php on line 19
+[26-Dec-2020 17:50:30 UTC] PHP Parse error:  syntax error, unexpected ')' in /var/www/html/helpers/authhelper.php on line 48
+[26-Dec-2020 17:50:30 UTC] Fatal error: syntax error, unexpected ')'
+[26-Dec-2020 17:50:30 UTC] PHP Fatal error:  Class 'AuthHelper' not found in /var/www/html/controllers/controller.php on line 19
+[26-Dec-2020 17:50:30 UTC] PHP Parse error:  syntax error, unexpected ')' in /var/www/html/helpers/authhelper.php on line 48
+[26-Dec-2020 17:50:30 UTC] Fatal error: syntax error, unexpected ')'
+[26-Dec-2020 17:50:30 UTC] PHP Fatal error:  Class 'AuthHelper' not found in /var/www/html/controllers/controller.php on line 19
+[26-Dec-2020 17:50:30 UTC] PHP Parse error:  syntax error, unexpected ')' in /var/www/html/helpers/authhelper.php on line 48
+[26-Dec-2020 17:50:30 UTC] Fatal error: syntax error, unexpected ')'
+[26-Dec-2020 17:50:30 UTC] PHP Fatal error:  Class 'AuthHelper' not found in /var/www/html/controllers/controller.php on line 19
+[26-Dec-2020 17:50:43 UTC] PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: no parameters were bound
+[26-Dec-2020 17:50:43 UTC] PHP Warning:  Unknown: Session data file is not created by your uid in Unknown on line 0
+[26-Dec-2020 17:50:43 UTC] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/var/www/html/tmp) in Unknown on line 0
+[26-Dec-2020 17:55:53 UTC] PHP Fatal error:  Cannot access empty property in /var/www/html/helpers/authhelper.php on line 47
+[26-Dec-2020 17:55:53 UTC] Fatal error: Cannot access empty property
+[26-Dec-2020 17:55:53 UTC] Unknown: Session data file is not created by your uid
+[26-Dec-2020 17:57:32 UTC] PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: no parameters were bound
+[26-Dec-2020 17:57:32 UTC] PHP Warning:  Unknown: Session data file is not created by your uid in Unknown on line 0
+[26-Dec-2020 17:57:32 UTC] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/var/www/html/tmp) in Unknown on line 0
+[26-Dec-2020 17:58:01 UTC] PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: no parameters were bound
+[26-Dec-2020 17:58:01 UTC] PHP Warning:  Unknown: Session data file is not created by your uid in Unknown on line 0
+[26-Dec-2020 17:58:01 UTC] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/var/www/html/tmp) in Unknown on line 0
+[26-Dec-2020 18:00:31 UTC] PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: no parameters were bound
+[26-Dec-2020 18:00:31 UTC] PHP Warning:  Unknown: Session data file is not created by your uid in Unknown on line 0
+[26-Dec-2020 18:00:31 UTC] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/var/www/html/tmp) in Unknown on line 0
+[26-Dec-2020 18:01:36 UTC] PHP Fatal error:  Call to undefined method Database::exec() in /var/www/html/helpers/authhelper.php on line 49
+[26-Dec-2020 18:01:36 UTC] Fatal error: Call to undefined method Database::exec()
+[26-Dec-2020 18:01:36 UTC] Unknown: Session data file is not created by your uid
+[26-Dec-2020 23:03:59 UTC] PHP Fatal error:  Call to undefined method Database::quote() in /var/www/html/helpers/authhelper.php on line 45
+[26-Dec-2020 23:03:59 UTC] Fatal error: Call to undefined method Database::quote()
+[26-Dec-2020 23:03:59 UTC] Unknown: Session data file is not created by your uid
+[26-Dec-2020 23:05:54 UTC] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead.
+[26-Dec-2020 23:05:54 UTC] PHP Warning:  Unknown: Session data file is not created by your uid in Unknown on line 0
+[26-Dec-2020 23:05:54 UTC] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/var/www/html/tmp) in Unknown on line 0
+[26-Dec-2020 23:06:10 UTC] mysql_real_escape_string(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead
+[26-Dec-2020 23:06:10 UTC] PHP Warning:  Unknown: Session data file is not created by your uid in Unknown on line 0
+[26-Dec-2020 23:06:10 UTC] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/var/www/html/tmp) in Unknown on line 0
+[26-Dec-2020 23:06:33 UTC] mysqli_real_escape_string() expects exactly 2 parameters, 1 given
+[26-Dec-2020 23:06:33 UTC] PHP Warning:  Unknown: Session data file is not created by your uid in Unknown on line 0
+[26-Dec-2020 23:06:33 UTC] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/var/www/html/tmp) in Unknown on line 0
+[26-Dec-2020 23:07:26 UTC] mysqli_escape_string() expects exactly 2 parameters, 1 given
+[26-Dec-2020 23:07:26 UTC] PHP Warning:  Unknown: Session data file is not created by your uid in Unknown on line 0
+[26-Dec-2020 23:07:26 UTC] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/var/www/html/tmp) in Unknown on line 0
+[26-Dec-2020 23:14:45 UTC] mysqli_escape_string() expects exactly 2 parameters, 1 given
+[26-Dec-2020 23:14:45 UTC] PHP Warning:  Unknown: Session data file is not created by your uid in Unknown on line 0
+[26-Dec-2020 23:14:45 UTC] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/var/www/html/tmp) in Unknown on line 0
+[26-Dec-2020 23:14:58 UTC] PHP Fatal error:  Call to undefined method Database::exec() in /var/www/html/helpers/authhelper.php on line 44
+[26-Dec-2020 23:14:58 UTC] Fatal error: Call to undefined method Database::exec()
+[26-Dec-2020 23:14:58 UTC] Unknown: Session data file is not created by your uid
+[26-Dec-2020 23:15:27 UTC] PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: no parameters were bound
+[26-Dec-2020 23:15:27 UTC] PHP Warning:  Unknown: Session data file is not created by your uid in Unknown on line 0
+[26-Dec-2020 23:15:27 UTC] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/var/www/html/tmp) in Unknown on line 0
+[26-Dec-2020 23:17:41 UTC] PHP Fatal error:  Call to undefined method Database::prepare() in /var/www/html/helpers/authhelper.php on line 46
+[26-Dec-2020 23:17:41 UTC] Fatal error: Call to undefined method Database::prepare()
+[26-Dec-2020 23:17:41 UTC] Unknown: Session data file is not created by your uid
+[26-Dec-2020 23:30:46 UTC] PDOStatement: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%'test'% OR content LIKE $'test'$' at line 1
+[26-Dec-2020 23:30:46 UTC] PHP Warning:  Unknown: Session data file is not created by your uid in Unknown on line 0
+[26-Dec-2020 23:30:46 UTC] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/var/www/html/tmp) in Unknown on line 0
+[26-Dec-2020 23:31:12 UTC] PDOStatement: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%'test'% OR content LIKE $'test'$' at line 1
+[26-Dec-2020 23:31:12 UTC] PHP Warning:  Unknown: Session data file is not created by your uid in Unknown on line 0
+[26-Dec-2020 23:31:12 UTC] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/var/www/html/tmp) in Unknown on line 0
+[26-Dec-2020 23:32:13 UTC] PDOStatement: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%'test'% OR content LIKE %'test'%' at line 1
+[26-Dec-2020 23:32:13 UTC] PHP Warning:  Unknown: Session data file is not created by your uid in Unknown on line 0
+[26-Dec-2020 23:32:13 UTC] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/var/www/html/tmp) in Unknown on line 0
+[26-Dec-2020 23:32:51 UTC] PDOStatement: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '\%'test'\% OR content LIKE \%'test'\%' at line 1
+[26-Dec-2020 23:32:51 UTC] PHP Warning:  Unknown: Session data file is not created by your uid in Unknown on line 0
+[26-Dec-2020 23:32:51 UTC] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/var/www/html/tmp) in Unknown on line 0
+>>>>>>> 7c0d11ed5ff545494515cd7d486d477ad69c304e
