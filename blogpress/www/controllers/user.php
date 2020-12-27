@@ -34,9 +34,6 @@ class User extends Controller {
 					$user->displayname = $user->username;
 				}
 
-				//Set the users password
-				$user->setPassword($user->password);
-
 				$user->save();	
 				StatusMessage::add('Registration complete','success');
 				return $f3->reroute('/user/login');

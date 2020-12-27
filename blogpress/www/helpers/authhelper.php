@@ -35,7 +35,7 @@
 		}
 
 		/** Look up user by username and password and log them in */
-		
+		/*
 		public function login($username,$password) {
 			$f3=Base::instance();						
 			$db = $this->controller->db;
@@ -46,18 +46,20 @@
 				return $this->forceLogin($user);
 			}
 			return false;
-		}
+		}*/
 
-/*
+
 		public function login($username,$password) {
 			$f3=Base::instance();						
 			$db = $this->controller->db;
 			$results = $db->query("SELECT * FROM `users` WHERE `username`='$username'");
-			if (!empty($results)) {		
-				$user_salt = results[5];
+			if (!empty($results)) {
+				# Comparing the hash of the inserted password with the one in the database
+				# Obtaining the hash
+				$user_salt = base64_decode($results[0]["salt"]);
 				$inserted_pass = hash_pbkdf2("sha256",$password,$user_salt,50,20);
-				$saved_pass = $results[4];
-				error_log($saved_pass);
+				$saved_pass = $results[0]['password'];
+				# Actual comparation
 				if($inserted_pass == $saved_pass){
 					$user = $results[0];
 					$this->setupSession($user);
@@ -67,7 +69,6 @@
 			\StatusMessage::add($saved_pass,'danger');
 			return false;
 		}
-*/
 
 		/** Log user out of system */
 		public function logout() {

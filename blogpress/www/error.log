@@ -1627,3 +1627,42 @@ Stack trace:
 [26-Dec-2020 15:37:43 UTC] HTTP 404 (GET /admin/%3C/a)
 [26-Dec-2020 15:37:43 UTC] HTTP 404 (GET /admin/%3C/a)
 [26-Dec-2020 15:37:50 UTC] HTTP 404 (GET /admin/favicon.ico)
+[26-Dec-2020 17:19:38 UTC] HTTP 404 (GET /%3C/a)
+[26-Dec-2020 17:19:38 UTC] HTTP 404 (GET /%3C/a)
+[26-Dec-2020 17:19:52 UTC] HTTP 404 (GET /%3C/a)
+[26-Dec-2020 17:19:52 UTC] HTTP 404 (GET /%3C/a)
+[26-Dec-2020 17:20:31 UTC] HTTP 404 (GET /%3C/a)
+[26-Dec-2020 17:20:31 UTC] HTTP 404 (GET /%3C/a)
+[26-Dec-2020 17:27:15 UTC] HTTP 404 (GET /%3C/a)
+[26-Dec-2020 17:27:15 UTC] HTTP 404 (GET /%3C/a)
+[27-Dec-2020 02:53:11 UTC] HTTP 404 (GET /%3C/a)
+[27-Dec-2020 02:53:11 UTC] HTTP 404 (GET /%3C/a)
+[27-Dec-2020 02:53:11 UTC] HTTP 404 (GET /favicon.ico)
+[27-Dec-2020 02:53:15 UTC] HTTP 404 (GET /%3C/a)
+[27-Dec-2020 02:53:15 UTC] HTTP 404 (GET /%3C/a)
+[27-Dec-2020 02:53:43 UTC] 
+[27-Dec-2020 02:53:43 UTC] 7965a16e44a5427cd3e9
+[27-Dec-2020 03:10:47 UTC] 928603dfee28ffa6beee
+[27-Dec-2020 03:10:47 UTC] 7965a16e44a5427cd3e9
+[27-Dec-2020 03:12:29 UTC] Illegal string offset 'salt'
+[27-Dec-2020 03:13:07 UTC] 928603dfee28ffa6beee
+[27-Dec-2020 03:13:07 UTC] 7d79aaaa81eb6d0ade6c
+[27-Dec-2020 03:18:05 UTC] salt
+[27-Dec-2020 03:18:05 UTC] saved pass20aa5a18f98ff789474c
+[27-Dec-2020 03:18:05 UTC] inserted pass16c80247497aa16e204a
+[27-Dec-2020 03:22:46 UTC] Creation of password with saltjEbzwEvMu7LIDuRFIZuTQA==
+[27-Dec-2020 03:23:00 UTC] salt
+[27-Dec-2020 03:23:00 UTC] saved pass90f218ca867f10308c93
+[27-Dec-2020 03:23:00 UTC] inserted pass2344601ca05aa2fe03ec
+[27-Dec-2020 03:24:11 UTC] saltåFÛ¿KÃª≤»‰E
+[27-Dec-2020 03:24:11 UTC] saved pass90f218ca867f10308c93
+[27-Dec-2020 03:24:11 UTC] inserted pass2344601ca05aa2fe03ec
+[27-Dec-2020 03:24:58 UTC] saltjEbzwEvMu7LIDuRF
+[27-Dec-2020 03:24:58 UTC] saved pass90f218ca867f10308c93
+[27-Dec-2020 03:24:58 UTC] inserted pass2344601ca05aa2fe03ec
+[27-Dec-2020 03:28:10 UTC] Creation of password with saltlqcWy621Nayvb84ReUZ2ig==
+[27-Dec-2020 03:28:22 UTC] saltlqcWy621Nayvb84ReUZ2ig==
+[27-Dec-2020 03:28:22 UTC] saved pass2d42db4c6526a19fee07
+[27-Dec-2020 03:28:22 UTC] inserted pass2d42db4c6526a19fee07
+[27-Dec-2020 03:28:22 UTC] HTTP 404 (GET /%3C/a)
+[27-Dec-2020 03:28:23 UTC] HTTP 404 (GET /%3C/a)
