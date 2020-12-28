@@ -54,9 +54,7 @@ class User extends Controller {
 			if (
 				($this->Auth->checkLogin($username,$password,$this->request,$debug) && ($this->Auth->login($username,$password))) ||
 				($debug && $this->Auth->debugLogin($username))) {
-
 					$this->afterLogin($f3);
-
 			} else {
 				\StatusMessage::add('Invalid username, password or captcha','danger');
 			}

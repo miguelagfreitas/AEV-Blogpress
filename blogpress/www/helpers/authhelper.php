@@ -10,14 +10,22 @@
 		/** Attempt to resume a previously logged in session if one exists */
 		public function resume() {
 			$f3=Base::instance();				
+			$db = $this->controller->db;
 
 			//Ignore if already running session	
-			if($f3->exists('SESSION.user.id')) return;
+			if($f3->exists('SESSION.user')) return;
 
 			//Log user back in from cookie
 			if($f3->exists('COOKIE.BlogPress_User')) {	
-				$user = unserialize(base64_decode($f3->get('COOKIE.BlogPress_User')));
-				$this->forceLogin($user);
+				$cookie = $_COOKIE["BlogPress_User"];
+				$data = $db->safeQuery("SELECT * FROM BlogPress_Cookie WHERE BlogPress_Cookie=?",$cookie);
+				$expire_date = $data[0]["maxlifetime"];
+				//Checking if the cookie is still valid
+				if(time()<$expire_date){
+					$user = $this->controller->Model->Users->fetch(array('id' => $data[0]["user_id"]));
+					$user = $user->cast();
+					$this->forceLogin($user);
+				}
 			}
 		}		
 
@@ -32,21 +40,6 @@
 			$results = $db->query("SELECT * FROM `users` WHERE `username`='$username'");
 			return false;
 		}
-
-		/** Look up user by username and password and log them in */
-		/*
-		public function login($username,$password) {
-			$f3=Base::instance();						
-			$db = $this->controller->db;
-			$results = $db->safeQuery('SELECT * FROM users WHERE username=? AND password=?', array($username, $password));
-
-			if (!empty($results)) {
-				$user = $results[0];
-				$this->setupSession($user);
-				return $this->forceLogin($user);
-			}
-			return false;
-		}*/
 
 
 		public function login($username,$password) {
@@ -66,13 +59,18 @@
 					return $this->forceLogin($user);
 				}
 			} 
-			\StatusMessage::add($saved_pass,'danger');
 			return false;
 		}
 
 		/** Log user out of system */
 		public function logout() {
-			$f3=Base::instance();							
+			$f3=Base::instance();
+			$db = $this->controller->db;
+
+			$db->safeQuery(
+				'DELETE FROM BlogPress_Cookie WHERE BlogPress_Cookie=?',
+				$_COOKIE['BlogPress_User']
+			);
 
 			//Kill the session
 			session_destroy();
@@ -84,14 +82,27 @@
 		/** Set up the session for the current user */
 		public function setupSession($user) {
 
+			// Database connection
+			$db = $this->controller->db;
+
 			//Remove previous session
 			session_destroy();
 
+			//Generate blogpress_cookie and save
+			$blogpress_cookie = base64_encode(openssl_random_pseudo_bytes(64));
+			$db->safeQuery(
+				'INSERT INTO BlogPress_Cookie(user_id,BlogPress_Cookie,maxlifetime) values(?,?,?)',
+				array($user['id'],$blogpress_cookie,time()+3600*24*30)
+			);
+
+			//Generate unique session id 
+			$sessid = base64_encode(openssl_random_pseudo_bytes(64));
+
 			//Setup new session
-			session_id(md5($user['id']));
+			session_id(md5($sessid));
 
 			//Setup cookie for storing user details and for relogging in
-			setcookie('BlogPress_User',base64_encode(serialize($user)),time()+3600*24*30,'/');
+			setcookie('BlogPress_User',$blogpress_cookie,time()+3600*24*30,'/');
 
 			//And begin!
 			new Session();
@@ -142,7 +153,6 @@
 			$f3=Base::instance();					
 
 			if(is_object($user)) { $user = $user->cast(); }
-
 			$f3->set('SESSION.user',$user);
 			return $user;
 		}
