@@ -55,7 +55,8 @@ class Blog extends Controller {
 		$post = $this->Model->Posts->fetch($id);
 		if($this->request->is('post')) {
 			$comment = $this->Model->Comments;
-			$comment->copyfrom('POST');
+			$comment->message = htmlspecialchars($_REQUEST['message']);
+			$comment->subject = htmlspecialchars($_REQUEST['subject']);
 			$comment->blog_id = $id;
 			$comment->created = mydate();
 
@@ -68,7 +69,7 @@ class Blog extends Controller {
 
 			//Default subject
 			if(empty($this->request->data['subject'])) {
-				$comment->subject = 'RE: ' . $post->title;
+				$comment->subject = 'RE: ' . htmlspecialchars($post->title);
 			}
 
 			$comment->save();
