@@ -57,6 +57,7 @@ class Blog extends Controller {
 			$comment = $this->Model->Comments;
 			$comment->message = htmlspecialchars($_REQUEST['message']);
 			$comment->subject = htmlspecialchars($_REQUEST['subject']);
+			$comment->user_id = $this->Auth->user('id');
 			$comment->blog_id = $id;
 			$comment->created = mydate();
 
