@@ -31,13 +31,12 @@
 
 		/** Perform any checks before starting login */
 		public function checkLogin($username,$password,$request,$debug) {
-			return true;
 			if($request->data['captcha']==$_SESSION['captcha_code']){
 				return true;
 			}
 			$f3=Base::instance();						
 			$db = $this->controller->db;
-			$results = $db->query("SELECT * FROM `users` WHERE `username`='$username'");
+			$results = $db->safeQuery("SELECT * FROM users WHERE username=?",$username);
 			return false;
 		}
 
@@ -45,7 +44,7 @@
 		public function login($username,$password) {
 			$f3=Base::instance();						
 			$db = $this->controller->db;
-			$results = $db->query("SELECT * FROM `users` WHERE `username`='$username'");
+			$results = $db->safeQuery("SELECT * FROM users WHERE username=?",$username);
 			if (!empty($results)) {
 				# Comparing the hash of the inserted password with the one in the database
 				# Obtaining the hash

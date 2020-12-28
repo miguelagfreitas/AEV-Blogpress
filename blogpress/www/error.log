@@ -115,3 +115,6 @@
 [28-Dec-2020 01:37:22 UTC] session_destroy(): Trying to destroy uninitialized session
 [28-Dec-2020 01:37:22 UTC] PHP Warning:  Unknown: The session id is too long or contains illegal characters, valid characters are a-z, A-Z, 0-9 and '-,' in Unknown on line 0
 [28-Dec-2020 01:37:22 UTC] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/var/www/html/tmp) in Unknown on line 0
+[28-Dec-2020 01:57:02 UTC] HTTP 404 (GET /favicon.ico)
+[28-Dec-2020 01:57:19 UTC] HTTP 404 (GET /hello)
+[28-Dec-2020 01:58:30 UTC] HTTP 405 (GET /page/favicon.ico)
