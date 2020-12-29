@@ -202,3 +202,7 @@
 [28-Dec-2020 18:53:06 UTC] Missing argument 2 for Base::route(), called in /var/www/html/controllers/blog.php on line 27 and defined
 [28-Dec-2020 18:53:19 UTC] Missing argument 2 for Base::route(), called in /var/www/html/controllers/blog.php on line 27 and defined
 [28-Dec-2020 19:13:13 UTC] HTTP 404 (GET /favicon.ico)
+[29-Dec-2020 17:25:00 UTC] HTTP 404 (GET /favicon.ico)
+[29-Dec-2020 17:29:57 UTC] HTTP 404 (GET /favicon.ico)
+[29-Dec-2020 17:29:58 UTC] HTTP 404 (GET /favicon.ico)
+[29-Dec-2020 17:30:24 UTC] HTTP 404 (GET /admin/favicon.ico)
