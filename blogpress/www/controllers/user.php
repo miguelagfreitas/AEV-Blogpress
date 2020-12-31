@@ -137,7 +137,7 @@ class User extends Controller {
 			} else if(isset($reset)) {
 				$u->avatar = '';
 			}
-
+			$u->bio = htmlspecialchars($u->bio);
 			$u->save();
 			\StatusMessage::add('Profile updated succesfully','success');
 			return $f3->reroute('/user/profile');
