@@ -100,16 +100,19 @@ class User extends Controller {
 
 	public function profile($f3) {	
 		$id = $this->Auth->user('id');
+
+		
 		extract($this->request->data);
 		$u = $this->Model->Users->fetch($id);
 		$oldpass = $u->password;
 		if($this->request->is('post')) {
-			$u->copyfrom('POST');
-			if(empty($u->password)) {
-				 $u->password = $oldpass; 
-			} else {
-				$u->setPassword($u->password);
+			$token = $f3->get('POST.token');
+			$csrf = $f3->get('SESSION.csrf');
+			if (empty($token) || empty($csrf) || $token!==$csrf) {
+				return $f3->reroute('/user/profile');
 			}
+			$u->copyfrom('POST');
+			if(empty($u->password)) { $u->password = $oldpass; }
 
 			//Handle avatar upload
 			$allowed = array('png','jpg');
@@ -137,7 +140,7 @@ class User extends Controller {
 			} else if(isset($reset)) {
 				$u->avatar = '';
 			}
-
+			$u->bio = htmlspecialchars($u->bio);
 			$u->save();
 			\StatusMessage::add('Profile updated succesfully','success');
 			return $f3->reroute('/user/profile');

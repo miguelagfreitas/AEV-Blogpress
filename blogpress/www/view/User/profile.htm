@@ -13,6 +13,9 @@
 	echo $form->add('password',array('type' => 'password', 'label' => 'Change Password','value' => ''));
 	echo $form->add('bio',array('type' => 'wysiwyg'));
 	echo $form->add('avatar',array('type' => 'file'));
+	echo $form->add('token',array('type' => 'hidden', 'value' => $f3->get('SESSION.csrf')));
+	
+
 	if(!empty($u->avatar)) {
 		echo $form->add('reset',array('type' => 'checkbox','label' => 'Reset Avatar'));
 	}

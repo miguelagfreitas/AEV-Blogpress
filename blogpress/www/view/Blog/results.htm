@@ -4,6 +4,7 @@
 	echo $form->add('search');
 	echo $form->add('Search',array('type' => 'submit', 'value' => $search));
 	echo $form->end();
+	echo $form->add('token',array('type' => 'hidden', 'value' => $f3->get('SESSION.csrf')));
 ?>
 
 <h2>Search Results</h2>

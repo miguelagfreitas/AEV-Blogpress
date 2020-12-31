@@ -6,6 +6,7 @@ $form = new Form();
 echo $form->start();
 echo $form->add('content',array('type' => 'wysiwyg', 'value' => h($page)));
 echo $form->add('Save Page',array('type' => 'submit'));
+echo $form->add('token',array('type' => 'hidden', 'value' => $f3->get('SESSION.csrf')));
 echo $form->end();
 
 ?>

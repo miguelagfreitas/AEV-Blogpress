@@ -9,6 +9,7 @@
 	echo $form->add('displayname',array('label' => 'Display Name'));
 	echo $form->add('password',array('type' => 'password'));
 	echo $form->add('level',array('type' => 'select', 'items' => array(1 => 'Normal User', 2 => 'Administrator')));
+	echo $form->add('token',array('type' => 'hidden', 'value' => $f3->get('SESSION.csrf')));
 	echo $form->add('bio',array('type' => 'wysiwyg'));
 	echo $form->add('avatar');
 	echo $form->add('Update',array('type' => 'submit'));

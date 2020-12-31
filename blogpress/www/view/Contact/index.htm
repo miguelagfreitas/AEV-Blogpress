@@ -20,6 +20,7 @@
 	echo $form->add('subject',array('type' => 'text'));
 	echo $form->add('message',array('type' => 'textarea'));
 	echo $form->add('Send',array('type' => 'submit'));
+	echo $form->add('token',array('type' => 'hidden', 'value' => $f3->get('SESSION.csrf')));
 
 	echo $form->end();
 ?>

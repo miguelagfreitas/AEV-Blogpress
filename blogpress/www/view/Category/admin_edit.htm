@@ -6,5 +6,6 @@
 	echo $form->start(array('action' => $site['base'].'/admin/category/edit/' . $category->id));
 	echo $form->add('title',array('value' => $category->title));
 	echo $form->add('Edit',array('type' => 'submit'));
+	echo $form->add('token',array('type' => 'hidden', 'value' => $f3->get('SESSION.csrf')));
 	echo $form->end();
 ?>

