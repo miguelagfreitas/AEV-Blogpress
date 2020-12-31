@@ -6,5 +6,6 @@
 	echo $form->add('subject');
 	echo $form->add('message',array('type' => 'wysiwyg'));
 	echo $form->add('Save',array('type' => 'submit'));
+	echo $form->add('token',array('type' => 'hidden', 'value' => $f3->get('SESSION.csrf')));
 	echo $form->end();
 ?>

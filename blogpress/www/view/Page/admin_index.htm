@@ -10,6 +10,7 @@
 	$form = new Form(); 
 	echo $form->start(array('action' => $site['base'].'/admin/page/add'));
 	echo $form->add('title',array('placeholder' => 'Enter Title'));
+	echo $form->add('token',array('type' => 'hidden', 'value' => $f3->get('SESSION.csrf')));
 	echo $form->add('Add Page',array('type' => 'submit'));
 	echo $form->end();
 ?>

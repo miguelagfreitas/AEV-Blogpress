@@ -78,6 +78,7 @@ echo $form->add('user_id',array('type' => 'hidden', 'value' => $user['id']));
 echo $form->add('subject',array('type' => 'text', 'placeholder' => 'Enter Subject'));
 echo $form->add('message',array('type' => 'wysiwyg','label' => 'Your message'));
 echo $form->add('Submit',array('type' => 'submit'));
+echo $form->add('token',array('type' => 'hidden', 'value' => $f3->get('SESSION.csrf')));
 echo $form->end();
 ?>
 <? endif; ?>
