@@ -5,7 +5,7 @@
 
 <?
 	$img = new Image();
-	$img->captcha("fonts/Oswald-Medium.ttf",20,2,"SESSION.captcha_code");
+	$img->captcha("fonts/Oswald-Medium.ttf",20,8,"SESSION.captcha_code");
 	$form = new Form(); 
 	echo $form->start();
 	echo $form->add('username');
